@@ -3,7 +3,7 @@
 <mapper namespace="com.whz.edu.mapper.UserMapper" >
 
 
-    <select id="findById" resultType="user" parameterType="int">
-        SELECT * FROM user WHERE id = #{id}
+    <select id="findById" resultType="com.whz.edu.model.User" parameterType="java.lang.Integer">
+        SELECT * FROM user WHERE uid = #{uid}
     </select>
 </mapper>

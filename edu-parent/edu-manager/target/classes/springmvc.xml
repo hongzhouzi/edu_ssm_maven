@@ -20,6 +20,12 @@
     <!--<context:component-scan base-package="com.whz.edu.web.controller" />-->
     <context:component-scan base-package="com.whz.edu" />
 
+    <!--静态资源解析，包括：js、css、img  -->
+    <!--<mvc:resources mapping="/assets/Images/**" location="/assets/Images/"/>
+    <mvc:resources mapping="/assets/Scripts/**" location="/assets/Scripts/"/>
+    <mvc:resources mapping="/assets/Styles/**" location="/assets/Styles/"/>
+-->
+    <!--<mvc:resources location="/assets/" mapping="/**/**"/>-->
 
     <!-- 2.配置映射处理和适配器-->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
